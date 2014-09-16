@@ -1,0 +1,136 @@
+Cmp-Mod V01 Created by CvPcb (2013-june-11)-stable date = Mon 15 Sep 2014 08:20:08 PM EDT
+
+BeginCmp
+TimeStamp = /53DD991A;
+Reference = C1;
+ValeurCmp = 10p;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5413A1FF;
+Reference = C2;
+ValeurCmp = 1u;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DD9CF6;
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54123F43;
+Reference = C4;
+ValeurCmp = 100n;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DD9F56;
+Reference = D1;
+ValeurCmp = DIODESCH;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DD9BA4;
+Reference = D2;
+ValeurCmp = DIODESCH;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DD9BB6;
+Reference = D3;
+ValeurCmp = DIODESCH;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DEE15B;
+Reference = D4;
+ValeurCmp = DIODESCH;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /541423F8;
+Reference = K1;
+ValeurCmp = POWER;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /541423D3;
+Reference = K2;
+ValeurCmp = LOAD;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DD9ACD;
+Reference = Q1;
+ValeurCmp = PNP;
+IdModule  = TO92;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DED315;
+Reference = Q2;
+ValeurCmp = MOSFET_N;
+IdModule  = TO220DGS;
+EndCmp
+
+BeginCmp
+TimeStamp = /54110B74;
+Reference = Q3;
+ValeurCmp = MOSFET_N;
+IdModule  = TO220GDS;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DD9A98;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DED36D;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /540CF01B;
+Reference = R3;
+ValeurCmp = 0;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5410FFE4;
+Reference = R4;
+ValeurCmp = 0;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53DD9B5B;
+Reference = RV1;
+ValeurCmp = 10k;
+IdModule  = POTA_Fav;
+EndCmp
+
+BeginCmp
+TimeStamp = /541422CC;
+Reference = U1;
+ValeurCmp = NE555N;
+IdModule  = DIP-8__300;
+EndCmp
+
+EndListe
