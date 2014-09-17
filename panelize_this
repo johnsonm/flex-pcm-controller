@@ -1,0 +1,6 @@
+#!/bin/sh
+
+./panelize.py flex-pcm-controller.brd flex-pcm-controller-panel.brd \
+    source-area 20.1/20.1mm 69.55/44.45mm \
+    copy 20.1/44.95mm
+sed -i '/T0/s/_C1//' flex-pcm-controller-panel.brd
