@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-june-11)-stable date = Mon 15 Sep 2014 08:20:08 PM EDT
+Cmp-Mod V01 Created by CvPcb (2013-june-11)-stable date = Mon 15 Sep 2014 10:10:39 PM EDT
 
 BeginCmp
 TimeStamp = /53DD991A;
@@ -29,13 +29,6 @@ IdModule  = C1;
 EndCmp
 
 BeginCmp
-TimeStamp = /53DD9F56;
-Reference = D1;
-ValeurCmp = DIODESCH;
-IdModule  = D3;
-EndCmp
-
-BeginCmp
 TimeStamp = /53DD9BA4;
 Reference = D2;
 ValeurCmp = DIODESCH;
@@ -57,10 +50,10 @@ IdModule  = D3;
 EndCmp
 
 BeginCmp
-TimeStamp = /541423F8;
+TimeStamp = /54179BC5;
 Reference = K1;
 ValeurCmp = POWER;
-IdModule  = PIN_ARRAY_3X1;
+IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
@@ -68,13 +61,6 @@ TimeStamp = /541423D3;
 Reference = K2;
 ValeurCmp = LOAD;
 IdModule  = PIN_ARRAY_3X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /53DD9ACD;
-Reference = Q1;
-ValeurCmp = PNP;
-IdModule  = TO92;
 EndCmp
 
 BeginCmp
@@ -92,23 +78,9 @@ IdModule  = TO220GDS;
 EndCmp
 
 BeginCmp
-TimeStamp = /53DD9A98;
-Reference = R1;
-ValeurCmp = 10k;
-IdModule  = R3;
-EndCmp
-
-BeginCmp
 TimeStamp = /53DED36D;
 Reference = R2;
 ValeurCmp = 10k;
-IdModule  = R3;
-EndCmp
-
-BeginCmp
-TimeStamp = /540CF01B;
-Reference = R3;
-ValeurCmp = 0;
 IdModule  = R3;
 EndCmp
 
