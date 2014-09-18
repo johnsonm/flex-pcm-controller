@@ -31,6 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:NE555N
 LIBS:wide-conn-3
+LIBS:wide-conn-4
 LIBS:flex-pcm-controller-cache
 EELAYER 27 0
 EELAYER END
@@ -129,47 +130,47 @@ $EndComp
 $Comp
 L PWR_FLAG #FLG04
 U 1 1 53DD9EA9
-P 1750 3400
-F 0 "#FLG04" H 1750 3495 30  0001 C CNN
-F 1 "PWR_FLAG" H 1950 3500 30  0000 C CNN
-F 2 "" H 1750 3400 60  0000 C CNN
-F 3 "" H 1750 3400 60  0000 C CNN
-	1    1750 3400
+P 1750 3550
+F 0 "#FLG04" H 1750 3645 30  0001 C CNN
+F 1 "PWR_FLAG" H 1950 3650 30  0000 C CNN
+F 2 "" H 1750 3550 60  0000 C CNN
+F 3 "" H 1750 3550 60  0000 C CNN
+	1    1750 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L PWR_FLAG #FLG05
 U 1 1 53DD9EB8
-P 1750 3600
-F 0 "#FLG05" H 1750 3695 30  0001 C CNN
-F 1 "PWR_FLAG" H 1550 3700 30  0000 C CNN
-F 2 "" H 1750 3600 60  0000 C CNN
-F 3 "" H 1750 3600 60  0000 C CNN
-	1    1750 3600
+P 1750 3750
+F 0 "#FLG05" H 1750 3845 30  0001 C CNN
+F 1 "PWR_FLAG" H 1550 3850 30  0000 C CNN
+F 2 "" H 1750 3750 60  0000 C CNN
+F 3 "" H 1750 3750 60  0000 C CNN
+	1    1750 3750
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR06
 U 1 1 53DD9FED
-P 1750 3400
-F 0 "#PWR06" H 1750 3400 30  0001 C CNN
-F 1 "GND" H 1750 3330 30  0001 C CNN
-F 2 "" H 1750 3400 60  0000 C CNN
-F 3 "" H 1750 3400 60  0000 C CNN
-	1    1750 3400
+P 1750 3550
+F 0 "#PWR06" H 1750 3550 30  0001 C CNN
+F 1 "GND" H 1750 3480 30  0001 C CNN
+F 2 "" H 1750 3550 60  0000 C CNN
+F 3 "" H 1750 3550 60  0000 C CNN
+	1    1750 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 3400 2100 3400
+	1750 3550 2100 3550
 $Comp
 L VCC #PWR07
 U 1 1 53DDA135
-P 1750 3600
-F 0 "#PWR07" H 1750 3700 30  0001 C CNN
-F 1 "VCC" H 1750 3700 30  0000 C CNN
-F 2 "" H 1750 3600 60  0000 C CNN
-F 3 "" H 1750 3600 60  0000 C CNN
-	1    1750 3600
+P 1750 3750
+F 0 "#PWR07" H 1750 3850 30  0001 C CNN
+F 1 "VCC" H 1750 3850 30  0000 C CNN
+F 2 "" H 1750 3750 60  0000 C CNN
+F 3 "" H 1750 3750 60  0000 C CNN
+	1    1750 3750
 	1    0    0    -1  
 $EndComp
 Text Label 3350 1900 0    60   ~ 0
@@ -248,9 +249,9 @@ Wire Wire Line
 Text Notes 4850 2150 0    60   ~ 0
 All values subject to application\nrequirements and datasheet\nlimitations and requirements.\nC2 and C4 types and values are\nspecified in 555 datasheet.\n\nRectifier diodes may generally be used\nfor D4. Schottky diodes for D2/D3\nwill give better frequency stability\nacross the PWM range than rectifer\ndiodes.\n\nIncreased RV1 or C3 value\nreduces frequency:\nFrequency ≅  1.44 / (RV1 * C3)\n\nCheck datasheets for all specific parts you\nchoose to ensure that all specifications will\nbe met.\n\nUse (abuse?) of discharge (pin 7) for signal\nin order to keep PWM frequency stable while\nsetting duty cycle with potentiometer and two\ndiodes inspired by a design by Rick Bickle:\nhttp://www.dprg.org/tutorials/2005-11a/
 Wire Wire Line
-	1750 3600 2500 3600
+	1750 3750 2500 3750
 Wire Wire Line
-	2500 3600 2500 3400
+	2500 3750 2500 3550
 $Comp
 L R R4
 U 1 1 5410FFE4
@@ -302,8 +303,6 @@ Wire Wire Line
 	2250 4700 3450 4700
 Wire Wire Line
 	2850 4700 2850 4500
-Wire Wire Line
-	3450 4700 3450 4750
 Connection ~ 2850 4700
 Wire Wire Line
 	1950 1700 1300 1700
@@ -327,12 +326,12 @@ $EndComp
 $Comp
 L C C4
 U 1 1 54123F43
-P 2300 3400
-F 0 "C4" V 2350 3450 40  0000 L CNN
-F 1 "100n" V 2350 3200 40  0000 L CNN
-F 2 "~" H 2338 3250 30  0000 C CNN
-F 3 "~" H 2300 3400 60  0000 C CNN
-	1    2300 3400
+P 2300 3550
+F 0 "C4" V 2350 3600 40  0000 L CNN
+F 1 "100n" V 2350 3350 40  0000 L CNN
+F 2 "~" H 2338 3400 30  0000 C CNN
+F 3 "~" H 2300 3550 60  0000 C CNN
+	1    2300 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -369,17 +368,6 @@ F 3 "~" H 2650 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L WIDE_CONN_3 K2
-U 1 1 541423D3
-P 3800 4500
-F 0 "K2" V 3750 4500 50  0000 C CNN
-F 1 "LOAD" V 3850 4500 40  0000 C CNN
-F 2 "~" H 3800 4500 60  0000 C CNN
-F 3 "~" H 3800 4500 60  0000 C CNN
-	1    3800 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L VCC #PWR013
 U 1 1 54123F52
 P 2650 1300
@@ -404,12 +392,36 @@ $EndComp
 $Comp
 L CONN_2 K1
 U 1 1 54179BC5
-P 1400 3500
-F 0 "K1" V 1350 3500 40  0000 C CNN
-F 1 "POWER" V 1450 3500 40  0000 C CNN
-F 2 "~" H 1400 3500 60  0000 C CNN
-F 3 "~" H 1400 3500 60  0000 C CNN
-	1    1400 3500
+P 1400 3650
+F 0 "K1" V 1350 3650 40  0000 C CNN
+F 1 "POWER" V 1450 3650 40  0000 C CNN
+F 2 "~" H 1400 3650 60  0000 C CNN
+F 3 "~" H 1400 3650 60  0000 C CNN
+	1    1400 3650
 	-1   0    0    1   
 $EndComp
+$Comp
+L WIDE_CONN_4 K2
+U 1 1 541B4B73
+P 3800 4700
+F 0 "K2" V 3750 4800 50  0000 C CNN
+F 1 "LOAD" V 3850 4800 50  0000 C CNN
+F 2 "~" H 3800 4700 60  0000 C CNN
+F 3 "~" H 3800 4700 60  0000 C CNN
+	1    3800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 541B4BBE
+P 3450 4900
+F 0 "#PWR014" H 3450 4900 30  0001 C CNN
+F 1 "GND" H 3450 4830 30  0001 C CNN
+F 2 "" H 3450 4900 60  0000 C CNN
+F 3 "" H 3450 4900 60  0000 C CNN
+	1    3450 4900
+	1    0    0    -1  
+$EndComp
+Text Notes 1300 3200 0    60   ~ 0
+Do not place K1 if jumper R4 connected\nto provide Vsupply+ as Vcc
 $EndSCHEMATC

@@ -1,5 +1,5 @@
-update=Sun 14 Sep 2014 06:03:48 PM EDT
-last_client=cvpcb
+update=Thu 18 Sep 2014 05:15:09 PM EDT
+last_client=eeschema
 [general]
 version=1
 [pcbnew]
@@ -40,6 +40,11 @@ LibName15=valves
 LibName16=Potentiometres
 LibName17=RV_base
 LibDir=../flex-pcm-controller
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=../flex-pcm-controller
@@ -81,8 +86,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=NE555N
 LibName32=wide-conn-3
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+LibName33=wide-conn-4
