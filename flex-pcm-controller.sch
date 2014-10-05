@@ -39,7 +39,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Flexible PCM Controller"
-Date "18 sep 2014"
+Date "5 oct 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -247,7 +247,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 1400 3900 1400
 Text Notes 4850 2150 0    60   ~ 0
-All values subject to application\nrequirements and datasheet\nlimitations and requirements.\nC2 and C4 types and values are\nspecified in 555 datasheet.\n\nRectifier diodes may generally be used\nfor D4. Schottky diodes for D2/D3\nwill give better frequency stability\nacross the PWM range than rectifer\ndiodes.\n\nIncreased RV1 or C3 value\nreduces frequency:\nFrequency ≅  1.44 / (RV1 * C3)\n\nCheck datasheets for all specific parts you\nchoose to ensure that all specifications will\nbe met.\n\nUse (abuse?) of discharge (pin 7) for signal\nin order to keep PWM frequency stable while\nsetting duty cycle with potentiometer and two\ndiodes inspired by a design by Rick Bickle:\nhttp://www.dprg.org/tutorials/2005-11a/
+All values subject to application\nrequirements and datasheet\nlimitations and requirements.\nC2 and C4 types and values are\nspecified in 555 datasheet.\n\nRectifier diodes may generally be used\nfor D4. Schottky diodes for D2/D3\nwill give better frequency stability\nacross the PWM range than rectifer\ndiodes.\n\nRV1 is linear. Pads provided to support\neither typical 0.2" potentiometer or 0.1"\ntrim potentiometer.\n\nIncreased RV1 or C3 value\nreduces frequency:\nFrequency ≅  1.44 / (RV1 * C3)\n\nCheck datasheets for all specific parts you\nchoose to ensure that all specifications will\nbe met.\n\nUse (abuse?) of discharge (pin 7) for signal\nin order to keep PWM frequency stable while\nsetting duty cycle with potentiometer and two\ndiodes inspired by a design by Rick Bickle:\nhttp://www.dprg.org/tutorials/2005-11a/
 Wire Wire Line
 	1750 3750 2500 3750
 Wire Wire Line
@@ -298,7 +298,7 @@ $EndComp
 Text Label 2550 4900 2    60   ~ 0
 SIG
 Text Notes 1500 5350 0    60   ~ 0
-Place either Q2 (DGS) or Q3 (GDS)\ndepending on layout. Do not place\nboth. PCB traces sized for 4A max.
+Place either Q2 (DGS) or Q3 (GDS)\ndepending on package. Do not place\nboth. PCB traces sized for 4A max.\nCheck connector current ratings.
 Wire Wire Line
 	2250 4700 3450 4700
 Wire Wire Line
