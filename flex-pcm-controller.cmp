@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-june-11)-stable date = Sun 05 Oct 2014 08:11:20 PM EDT
+Cmp-Mod V01 Created by CvPcb (2013-june-11)-stable date = Sun 05 Oct 2014 09:29:04 PM EDT
 
 BeginCmp
 TimeStamp = /53DD991A;
@@ -71,15 +71,8 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /53DED315;
-Reference = Q2;
-ValeurCmp = MOSFET_N;
-IdModule  = TO220DGS;
-EndCmp
-
-BeginCmp
 TimeStamp = /54110B74;
-Reference = Q3;
+Reference = Q1;
 ValeurCmp = MOSFET_N;
 IdModule  = TO220GDS;
 EndCmp
