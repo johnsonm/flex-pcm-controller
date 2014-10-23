@@ -39,7 +39,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Flexible PCM Controller"
-Date "6 oct 2014"
+Date "22 oct 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -176,28 +176,6 @@ $EndComp
 Text Label 3350 1900 0    60   ~ 0
 SIG
 $Comp
-L MOSFET_N Q2
-U 1 1 53DED315
-P 2150 4900
-F 0 "Q2" H 1750 4800 60  0000 R CNN
-F 1 "MOSFET_N" H 2100 4700 60  0000 R CNN
-F 2 "TO220_VERT" H 2150 4900 60  0001 C CNN
-F 3 "~" H 2150 4900 60  0000 C CNN
-	1    2150 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR08
-U 1 1 53DED354
-P 2250 5100
-F 0 "#PWR08" H 2250 5100 30  0001 C CNN
-F 1 "GND" H 2250 5030 30  0001 C CNN
-F 2 "" H 2250 5100 60  0000 C CNN
-F 3 "" H 2250 5100 60  0000 C CNN
-	1    2250 5100
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R2
 U 1 1 53DED36D
 P 1950 4650
@@ -250,10 +228,10 @@ Vload+
 Text Label 3450 4300 2    60   ~ 0
 Vsupply+
 $Comp
-L MOSFET_N Q3
+L MOSFET_N Q1
 U 1 1 54110B74
 P 2750 4900
-F 0 "Q3" H 3050 4800 60  0000 R CNN
+F 0 "Q1" H 3050 4800 60  0000 R CNN
 F 1 "MOSFET_N" H 3400 4700 60  0000 R CNN
 F 2 "TO220_VERT" H 2750 4900 60  0001 C CNN
 F 3 "~" H 2750 4900 60  0000 C CNN
@@ -261,10 +239,10 @@ F 3 "~" H 2750 4900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR08
 U 1 1 54110BA8
 P 2850 5100
-F 0 "#PWR09" H 2850 5100 30  0001 C CNN
+F 0 "#PWR08" H 2850 5100 30  0001 C CNN
 F 1 "GND" H 2850 5030 30  0001 C CNN
 F 2 "" H 2850 5100 60  0000 C CNN
 F 3 "" H 2850 5100 60  0000 C CNN
@@ -274,12 +252,9 @@ $EndComp
 Text Label 2550 4900 2    60   ~ 0
 SIG
 Text Notes 1500 5350 0    60   ~ 0
-Place either Q2 (DGS) or Q3 (GDS)\ndepending on package. Do not place\nboth. PCB traces sized for 4A max.\nCheck connector current ratings.
-Wire Wire Line
-	2250 4700 3450 4700
+PCB traces sized for 4A max power.\nCheck connector current ratings.
 Wire Wire Line
 	2850 4700 2850 4500
-Connection ~ 2850 4700
 Wire Wire Line
 	1950 1700 1300 1700
 Wire Wire Line
@@ -289,10 +264,10 @@ Wire Wire Line
 Wire Wire Line
 	3350 2800 3350 2100
 $Comp
-L GND #PWR010
+L GND #PWR09
 U 1 1 54123F2A
 P 2650 2500
-F 0 "#PWR010" H 2650 2500 30  0001 C CNN
+F 0 "#PWR09" H 2650 2500 30  0001 C CNN
 F 1 "GND" H 2650 2430 30  0001 C CNN
 F 2 "" H 2650 2500 60  0000 C CNN
 F 3 "" H 2650 2500 60  0000 C CNN
@@ -311,10 +286,10 @@ F 3 "~" H 2300 3550 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR011
+L GND #PWR010
 U 1 1 54123F71
 P 2650 900
-F 0 "#PWR011" H 2650 900 30  0001 C CNN
+F 0 "#PWR010" H 2650 900 30  0001 C CNN
 F 1 "GND" H 2650 830 30  0001 C CNN
 F 2 "" H 2650 900 60  0000 C CNN
 F 3 "" H 2650 900 60  0000 C CNN
@@ -344,10 +319,10 @@ F 3 "~" H 2650 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR012
+L VCC #PWR011
 U 1 1 54123F52
 P 2650 1300
-F 0 "#PWR012" H 2650 1400 30  0001 C CNN
+F 0 "#PWR011" H 2650 1400 30  0001 C CNN
 F 1 "VCC" H 2650 1400 30  0000 C CNN
 F 2 "" H 2650 1300 60  0000 C CNN
 F 3 "" H 2650 1300 60  0000 C CNN
@@ -388,10 +363,10 @@ F 3 "~" H 3800 4700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L GND #PWR012
 U 1 1 541B4BBE
 P 3450 4900
-F 0 "#PWR013" H 3450 4900 30  0001 C CNN
+F 0 "#PWR012" H 3450 4900 30  0001 C CNN
 F 1 "GND" H 3450 4830 30  0001 C CNN
 F 2 "" H 3450 4900 60  0000 C CNN
 F 3 "" H 3450 4900 60  0000 C CNN
@@ -405,7 +380,7 @@ L 7805 U2
 U 1 1 5431D8DB
 P 2350 4250
 F 0 "U2" H 2500 4054 60  0000 C CNN
-F 1 "7805" H 2350 4450 60  0000 C CNN
+F 1 "78xx" H 2350 4450 60  0000 C CNN
 F 2 "~" H 2350 4250 60  0000 C CNN
 F 3 "~" H 2350 4250 60  0000 C CNN
 	1    2350 4250
@@ -414,7 +389,7 @@ $EndComp
 Wire Wire Line
 	3450 4300 2750 4300
 Text Notes 2600 3350 0    60   ~ 0
-Replace 7805 with any voltage regulator\ncompatible with chosen 555 chip, or with\na jumper from VI to VO if Vsupply+ = Vcc\nor omit entirely if 555 power supplied\nfrom K1. Place C5 only if using 780x VR.
+For 78xx, use 7805 or any voltage regulator\ncompatible with chosen 555 chip, or with\na jumper from VI to VO if Vsupply+ = Vcc\nor omit entirely if 555 power supplied\nfrom K1. Place C5 only if using 78xx VR.
 $Comp
 L C C5
 U 1 1 5431DC22
@@ -427,10 +402,10 @@ F 3 "~" H 2750 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L GND #PWR013
 U 1 1 5431DCBE
 P 2750 3900
-F 0 "#PWR014" H 2750 3900 30  0001 C CNN
+F 0 "#PWR013" H 2750 3900 30  0001 C CNN
 F 1 "GND" H 2750 3830 30  0001 C CNN
 F 2 "" H 2750 3900 60  0000 C CNN
 F 3 "" H 2750 3900 60  0000 C CNN
@@ -438,10 +413,10 @@ F 3 "" H 2750 3900 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR015
+L GND #PWR014
 U 1 1 5431DD11
 P 2350 4000
-F 0 "#PWR015" H 2350 4000 30  0001 C CNN
+F 0 "#PWR014" H 2350 4000 30  0001 C CNN
 F 1 "GND" H 2350 3930 30  0001 C CNN
 F 2 "" H 2350 4000 60  0000 C CNN
 F 3 "" H 2350 4000 60  0000 C CNN
@@ -450,4 +425,8 @@ F 3 "" H 2350 4000 60  0000 C CNN
 $EndComp
 Text Label 1950 4300 0    60   ~ 0
 VCC
+Wire Wire Line
+	2550 4900 1950 4900
+Wire Wire Line
+	2850 4700 3450 4700
 $EndSCHEMATC
